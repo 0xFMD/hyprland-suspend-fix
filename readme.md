@@ -19,7 +19,26 @@ The solution involves the following steps:
 3. Reload the systemd daemon and enable the newly created services.
  
    *** ***[Click here for a script that automates the steps](suspend-hyprland-fix.sh)*** ***
+
+
+   or
+
+
+   use this command to automatically install the script on your system(requires sudo privileges to enable systemd services)
+   
+   ```
+   curl -fsSL https://raw.githubusercontent.com/MysticBytes786/hyprland-suspend-fix/main/suspend-hyprland-fix.sh | sudo bash 
+   ```
+
+   otherwise you can manually clone the repo and run suspend-hyprland-fix.sh(safer method)
+
+   ```
+   git clone https://github.com/MysticBytes786/hyprland-suspend-fix
+   cd hyprland-suspend-fix
+   sudo ./suspend-hyprland-fix.sh #sudo is used to enable systemd services
+   ```
 ---
+## DIY method
 
 #### Step 1: Create the script
 
